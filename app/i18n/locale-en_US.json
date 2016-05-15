@@ -1,0 +1,26 @@
+{
+  "views":{
+      "main":{
+        "contactlist": "Contact list",
+        "addNewContact":  "Add new Contact",
+        "previous": "Previous",
+        "next": "Next"
+      },
+    "add":{
+      "Name": "Name",
+      "Phone": "Phone",
+      "email": "Email",
+      "Org": "Organization",
+      "Done": "Done",
+      "Cancel": "Cancel",
+      "Add": "Address",
+      "Edit": "Edit",
+      "Delete": "Delete"
+    }
+  },
+  "directives":{
+    "language-select": {
+      "Language": "Language"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+<div class="col-md-10 panel panel-default">
+  <div class="row panel panel-heading">
+    <div class="col-md-12">
+      <div class="col-md-6">
+        <h3>{{"views.main.contactlist" | translate}}</h3>
+      </div>
+      <div class="col-md-6">
+        <div class="pull-right">
+          <div ng-translate-language-select></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <button class="btn btn-default" ui-sref="add"><i class="fa fa-plus"></i> {{"views.main.addNewContact" | translate}}</button>
+    </div>
+  </div>
+  <div class="col-md-11 panel panel-body">
+    <ul class="list-group view-list">
+      <li class="list-group-item" ng-repeat="list in totallists">
+        <div class="row" ui-sref="details({Id: list.Id})">
+          <h4>{{list.Name}}</h4>
+          <p>{{list.Phone}}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="col-md-1 panel panel-body" style="overflow: hidden">
+    <ul class="list-group">
+      <li class="list-group-item" ng-repeat="letter in letters" >
+          <p ui-sref="searchByLetter({name: letter.name})">{{letter.name}}</p>
+      </li>
+    </ul>
+
+  </div>
+</div>
+<div class="col-md-12">
+  <button class="btn btn-default" ng-click="PreButton()">{{"views.main.previous" | translate}}</button>
+  <button class="btn btn-default" ng-click="NextButton()">{{"views.main.next" | translate}}</button>
+</div>

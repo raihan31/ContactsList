@@ -1,0 +1,57 @@
+<div class="col-md-12">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <h3>{{"views.main.contactlist" | translate}}</h3>
+            </div>
+            <div class="col-md-6">
+                <div class="pull-right">
+                    <div ng-translate-language-select></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-12">
+        <form class="form-vertical panel panel-default" name="Form">
+            <div class="col-md-12 panel panel-heading btn-group-lg">
+                <div class="col-md-6 btn-lg">
+                    <button class="btn btn-default" ng-click="Cancel()"><i class="fa fa-times"></i> {{"views.add.Cancel" | translate}}</button>
+                </div>
+                <div class="col-md-6 btn-lg">
+                    <button class="btn btn-default" ng-click="Save()"><i class="fa fa-check"></i> {{"views.add.Done" | translate}}</button>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <label for="iName" class="form-control-label">{{"views.add.Name" | translate}}</label>
+                    <input type="text" class="form-control" ng-model="FormData.Name" id="iName" placeholder='{{"views.add.Name" | translate}}'>
+                </div>
+                <div class="form-group">
+                    <label for="iPhone" class="form-control-label">{{"views.add.Phone" | translate}}</label>
+                    <input type="text" class="form-control" ng-model="FormData.Phone" id="iPhone" placeholder='{{"views.add.Phone" | translate}}'>
+                </div>
+                <div class="form-group">
+                    <label for="iEmail" class="form-control-label">{{"views.add.email" | translate}}</label>
+                    <input type="email" name="emailcheck" class="form-control" ng-change="Emailcheck(FormData.Email)"  ng-model="FormData.Email" id="iEmail" placeholder='{{"views.add.email" | translate}}'>
+                    <span ng-show="ValidationChecked">
+                        Email Matched
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label for="iOrg" class="form-control-label">{{"views.add.Org" | translate}}</label>
+                    <input type="text" class="form-control" id="iOrg" ng-model="Org1" placeholder='{{"views.add.Org" | translate}}'>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="iOrg2" ng-model="Org2" placeholder='{{"views.add.Org" | translate}}'>
+                </div>
+                <div class="form-group">
+                    <label for="iAdd" class="form-control-label">{{"views.add.Add" | translate}}</label>
+                    <input type="text" class="form-control" id="iAdd" ng-model="FormData.Address" placeholder='{{"views.add.Add" | translate}}'>
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+</div>

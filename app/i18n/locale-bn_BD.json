@@ -1,0 +1,29 @@
+{
+  "views":{
+      "main":{
+        "contactlist": "যোগাযোগ তালিকা",
+        "addNewContact": "নতুন পরিচিতি যোগ করুন",
+        "previous": "আগে",
+        "next": "পরবর্তী"
+      },
+    "add":{
+      "Name": "নাম",
+      "Phone": "ফোন",
+      "email": "ই-মেইল",
+      "Org": "সংগঠন",
+      "Done": "সম্পন্ন",
+      "Cancel": "বাতিল",
+      "Add": "ঠিকানা",
+      "Edit": "সম্পাদন করা",
+      "Delete": "মুছে ফেলা"
+
+    }
+
+
+    },
+  "directives":{
+    "language-select": {
+      "Language": "ভাষা"
+    }
+  }
+}
